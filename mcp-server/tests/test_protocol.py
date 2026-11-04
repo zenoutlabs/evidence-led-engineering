@@ -46,6 +46,7 @@ class ProtocolTests(unittest.IsolatedAsyncioTestCase):
         async with Client(mcp, read_timeout_seconds=5) as client:
             for change in (
                 {"baseline_ms": [True, 2, 3]},
+                {"unknown": True},
                 {"baseline_ms": ["1", 2, 3]},
                 {"baseline_ms": [1] * 101},
                 {"baseline_ms": [1, 2, 3, 4]},
