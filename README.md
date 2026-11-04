@@ -60,7 +60,7 @@ These are illustrative measurements. They do not predict a speedup for another a
 MCP means Model Context Protocol. Compatible AI applications can call `review_measurements` and read five fixed guide sections. The tool compares supplied timing samples and reports missing experiment facts. Those facts remain caller declarations, rather than independent proof.
 
 ```bash
-uv run --project mcp-server --frozen python mcp-server/server.py
+uv run --project mcp-server --frozen evidence-led-engineering-mcp
 ```
 
 This component requires Python 3.10 or later and [uv](https://docs.astral.sh/uv/getting-started/installation/). It uses the locked official MCP SDK. It waits for a client on standard input and output. Read the [setup guide](mcp-server/README.md) for a client configuration and sample request.
